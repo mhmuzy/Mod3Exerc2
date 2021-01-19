@@ -8,11 +8,9 @@ public class Show {
 		System.out.println("");
 		System.out.println("        Hitss Treinamento");
 		System.out.println("");
-		System.out.println("Prezado cliente, digite o número final de sua placa para a ver o mês da Vistoria:");
+		System.out.println("Inicializando a sequência dos valores:");
 		int num;
-		Scanner teclado = new Scanner(System.in);
-		System.out.println("");
-		num = teclado.nextInt();
+		for(num = 0; num < 10; num++) {		
 		System.out.println("");
 		switch (num) {
 		case 0:
@@ -48,6 +46,7 @@ public class Show {
 		default:
 			System.out.println("Dígito Inválido.");
 			break;
+		}
 		}
 		} catch (Exception e) {
 			System.out.println("Erro de Processamento: " + e.getMessage());
